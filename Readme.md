@@ -1,38 +1,57 @@
-## Voice Assistant - Buddy  
+Voice Assistant  
 
-### Description  
-Buddy is a voice-controlled AI assistant built using Python. It can perform various tasks like searching Wikipedia, opening websites, playing music, checking the time, and even sending emails.  
+This is a Python-based voice assistant developed by Sujeet Vishwakarma. It can perform various tasks such as searching Wikipedia, opening websites, playing music, telling the time, and sending emails. The assistant listens to voice commands and executes actions accordingly.  
 
-### Features  
-- **Speech Recognition**: Understands and responds to voice commands.  
-- **Wikipedia Search**: Retrieves summarized results from Wikipedia.  
-- **Web Browsing**: Opens YouTube, Google, and Stack Overflow.  
-- **Music Playback**: Plays music from a specified directory.  
-- **Time Check**: Tells the current time.  
-- **Email Sending**: Sends emails using SMTP.  
+Developer  
 
-### Installation  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-   ```  
-2. Install dependencies:  
-   ```bash
-   pip install pyaudio pyttsx3 speechRecognition wikipedia  
-   ```  
+Name: Sujeet Kumar  
+Email: vishwakarma.sujeet1626@gmail.com   
 
-### Usage  
-Run the script:  
-```bash
-python your_script.py  
-```  
+Features  
 
-### Requirements  
-- Python 3.x  
-- Internet connection for Wikipedia search and web browsing  
-- A configured Gmail account for sending emails  
+- Greets the user based on the time of day  
+- Recognizes voice commands using speech recognition  
+- Searches Wikipedia for information  
+- Opens websites like YouTube, Google, and Stack Overflow  
+- Plays music from a specified directory  
+- Tells the current time  
+- Opens Visual Studio Code  
+- Sends emails via Gmail  
 
-### License  
-This project is licensed under the MIT License.  
+Requirements  
 
+Before running the program, install the necessary dependencies using:  
+
+pip install pyaudio pyttsx3 speechRecognition wikipedia  
+
+How to Use  
+
+1. Run the script, and the assistant will greet you  
+2. Speak commands like:  
+   - open YouTube to open YouTube  
+   - search Wikipedia for [topic] to get Wikipedia results  
+   - play music to play music from a specified directory  
+   - what's the time to get the current time  
+   - email to Friend to send an email  
+3. The assistant will process your voice and perform the action  
+
+Customization  
+
+- Change the voice in engine.setProperty('voice', voices[0].id)  
+- Modify the music directory in music_dir = 'D:\\Music'  
+- Update email credentials in the sendEmail function to use your own  
+
+Known Issues  
+
+- Background noise can affect voice recognition accuracy  
+- Email functionality requires enabling Less Secure Apps in Gmail or using an app password  
+
+Future Improvements  
+
+- Add more commands for automation tasks  
+- Improve error handling and response accuracy  
+- Integrate AI models for smarter interactions  
+
+License  
+
+This project is licensed under the MIT License. See the LICENSE file for more details.  
